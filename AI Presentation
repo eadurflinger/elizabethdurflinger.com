@@ -5,6 +5,7 @@
     <head>
         <title>AI as Weapons</title>
     </head>
+    <font face="Helvetica, san-serif">
         <body>
             <h1>The Implementation of AI as Weapons</h1>
             
@@ -13,7 +14,7 @@
 
             <h3>AI as Weapons: Is it ethical?</h3>
                 <p>This should be the main arguement. Learn how to create a link to a separate html file with this information. Use the opinions of anthropologists as well as those who make these AI units. Address the drones that kill. Should facial recognition via drones be a viable tactic to identifying suspects or terrorists?</p>
-          
-            <h4></h4>
+                
         </body>
+    </font>
     
