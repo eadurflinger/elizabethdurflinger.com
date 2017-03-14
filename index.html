@@ -8,7 +8,6 @@
         
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
         <!--[if lte IE 8]>
             <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-old-ie-min.css">
@@ -16,18 +15,31 @@
         <!--[if gt IE 8]><!-->
             <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
         <!--<![endif]-->
+                
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     </head>
     
     <style>
+        
         body{
             font-family: 'Roboto', sans-serif;
+            background-color: peachpuff
+        }
+        
+        /* utility */
+        .centered{
+            text-align: center;
+        }
+        .mask{
+            overflow: hidden;
+            border-radius: 50%;
         }
     </style>
 
     <body>
         <div class="pure-g centered">
             <div class="pure-u-1-1">
-                <img class="Profile" alt="Elizabeth Durflinger" src="/images/senior-photo.jpg">
+                <img class="mask" alt="Elizabeth Durflinger" src="/images/senior-photo.jpg">
             </div>
         </div>
     </body>
