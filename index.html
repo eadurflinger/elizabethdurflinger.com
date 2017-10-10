@@ -2,56 +2,215 @@
 
 <html lang="en">
 
-    <head>
-        
-        <title>Elizabeth Durflinger</title>
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
-        <!--[if lte IE 8]>
-            <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-old-ie-min.css">
-        <![endif]-->
-        <!--[if gt IE 8]><!-->
-            <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
-        <!--<![endif]-->
-                
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="#">
+    <title>Elizabeth Durflinger</title>
+    <link rel="shortcut icon" type="image/png" href="EDlogo.png" />
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
     
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+    <!--<![endif]-->
+    
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Ubuntu+Mono|VT323" rel="stylesheet" rel="stylesheet">
+</head>
+
+<body>
+        <div id="clouds">
+            <div class="cloud x1"></div>
+            <div class="cloud x2"></div>
+            <div class="cloud x3"></div>
+            <div class="cloud x4"></div>
+            <div class="cloud x5"></div>
+
+            <div class="pure-u-1-1 margin center">
+                <h1>Elizabeth Durflinger</h1>
+                <h2>Elizabeth Durflinger is a Computer Science Major based out of Youngstown, OH. She is an avid hacker, artist, and hackathon organizer.</h2>
+            </div>
+        </div>
+</body>
+
     <style>
-        
         body{
-            font-family: 'Roboto', sans-serif;
-            background-color: #e6e6e6
+        background-color: rgba(135, 244, 244, 0.99);
+        background: linear-gradient(-45deg, #ffe6ef, #d8e6ff, #d8f5ff, #f2d3ff);
+        background-size: 600% 600%;
+        -webkit-animation: Gradient 15s ease infinite;
+        -moz-animation: Gradient 15s ease infinite;
+        animation: Gradient 15s ease infinite;
+        color: #ffffff;
+        overflow: hidden;
+    }
+    #pusheen{
+        padding: 100px, 0;
         }
-        
+    #clouds{
+        padding: 100px 0;
+    }
+    .cloud{
+        width: 200px; height: 40px;
+        background: #fff;
+
+        border-radius: 100px;
+        -moz-border-radius: 250px;
+        -webkit-border-radius: 100px;
+
+        position: absolute; 
+    }
+    .cloud:before, .cloud:after{
+        content: '';
+        position: relative; 
+        background: #fff;
+        width: 100px; height: 80px;
+        position: absolute; top: -15px; left: 10px;
+
+        border-radius: 100px;
+        -moz-border-radius: 100px;
+        -webkit-border-radius: 100px;
+
+        -webkit-transform: rotate(30deg);
+        transform: rotate(30deg);
+        -moz-transform: rotate(30deg);
+    }
+
+    .cloud:after {
+        width: 120px; height: 120px;
+        top: -55px; left: auto; right: 15px;
+    }
+
+    .x1 {
+        -webkit-animation: moveclouds 30s linear infinite;
+        -moz-animation: moveclouds 30s linear infinite;
+        -o-animation: moveclouds 30s linear infinite;
+    }
+
+    .x2 {
+        left: 200px;
+        -webkit-transform: scale(0.6);
+        -moz-transform: scale(0.6);
+        transform: scale(0.6);
+        opacity: 0.6;
+        -webkit-animation: moveclouds 32s linear infinite;
+        -moz-animation: moveclouds 32s linear infinite;
+        -o-animation: moveclouds 32s linear infinite;
+    }
+    .x3 {
+        left: -250px; top: -200px;
+
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        transform: scale(0.8);
+        opacity: 0.4s;
+        -webkit-animation: moveclouds 33s linear infinite;
+        -moz-animation: moveclouds 33s linear infinite;
+        -o-animation: moveclouds 33s linear infinite;
+    }
+    .x4 {
+        left: 470px; top: -250px;
+
+        -webkit-transform: scale(0.75);
+        -moz-transform: scale(0.75);
+        transform: scale(0.75);
+        opacity: 0.65;
+        -webkit-animation: moveclouds 34s linear infinite;
+        -moz-animation: moveclouds 34s linear infinite;
+        -o-animation: moveclouds 34s linear infinite;
+    }
+    .x5 {
+        left: -150px; top: -150px;
+
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        transform: scale(0.8);
+        opacity: 0.5;
+        -webkit-animation: moveclouds 33s linear infinite;
+        -moz-animation: moveclouds 33s linear infinite;
+        -o-animation: moveclouds 33s linear infinite;
+    }
+
+    @-webkit-keyframes moveclouds {
+        0% {margin-left: 1000px;}
+        100% {margin-left: -1000px;}
+    }
+    @-moz-keyframes moveclouds {
+        0% {margin-left: 1000px;}
+        100% {margin-left: -1000px;}
+    }
+    @-o-keyframes moveclouds {
+        0% {margin-left: 1000px;}
+        100% {margin-left: -1000px;}
+    }
+
+    @-webkit-keyframes Gradient {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+
+    @-moz-keyframes Gradient {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+
+    @keyframes Gradient {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+
         /* utility */
-        .centered{
-            text-align: left;
+        .center{
+            text-align: center;
+        }
+        .button{
+            background-color: #ffffff;
+            color:#ffdce9;
         }
         .mask{
             overflow: hidden;
             border-radius: 50%;
         }
-        
-        .border{
-            padding-bottom: 30px;
-            padding-left: 10px;
-            padding-right: 10px;
-            padding-top: 10px;
+        .margin{
+            margin: 10px;
+        }
+        h1{
+            font-family: 'Source Code Pro', monospace;
+            font-size: 70px;
+            color: #ffffff;
+            padding:inherit;
+/*            text-shadow:2px 2px 8px rgba(255, 192, 215, 0.67);*/
+        }
+        h2{
+            padding-left: 20px;
+            padding-right: 20px;
+            font-family: 'Source Code Pro', monospace;
+
         }
     </style>
-
-    <body>
-        <div class="pure-g centered">
-            <div class="pure-u-1-1">
-                <img class="mask" alt="Elizabeth Durflinger" src="/images/senior-photo.jpg">
-            </div>
-        </div>
-        <div class="pure-g centered">
-            <div class="pure-u-1-1"></div>
-        </div>
-    </body>
-    
 </html>
