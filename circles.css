@@ -1,0 +1,161 @@
+/*Large circle*/
+.large-circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    overflow: hidden;
+    display: none;
+}
+.medium-circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    overflow: hidden;
+    display: none;
+}
+
+.small-circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    overflow: hidden;
+    display: none;
+}
+.circle1 {
+    background: black;
+    right: -50px;
+    bottom: -100px;
+    border: 3px solid red;
+}
+.circle2 {
+    background: transparent;
+    right: -53px;
+    bottom: -103px;
+    border: 6px solid orange;
+}
+.circle3 {
+    background: transparent;
+    right: -56px;
+    bottom: -106px;
+    border: 9px solid yellow;
+}
+.circle4 {
+    background: transparent;
+    right: -59px;
+    bottom: -109px;
+    border: 12px solid green;
+}
+.circle5 {
+    background: transparent;
+    right: -62px;
+    bottom: -112px;
+    border: 15px solid blue;
+}
+.circle6 {
+    background: transparent;
+    right: -65px;
+    bottom: -115px;
+    border: 18px solid indigo;
+}
+.circle7 {
+    background: transparent;
+    right: -68px;
+    bottom: -118px;
+    border: 21px solid #9400D3;
+}
+
+
+.circle8 {
+    background: black;
+    right: 100px;
+    bottom: 170px;
+    border: 3px solid red;
+}
+.circle9 {
+    background: transparent;
+    right: 97px;
+    bottom: 167px;
+    border: 6px solid orange;
+}
+.circle10 {
+    background: transparent;
+    right: 94px;
+    bottom: 164px;
+    border: 9px solid yellow;
+}
+.circle11 {
+    background: transparent;
+    right: 91px;
+    bottom: 161px;
+    border: 12px solid green;
+}
+.circle12 {
+    background: transparent;
+    right: 88px;
+    bottom: 158px;
+    border: 15px solid blue;
+}
+.circle13 {
+    background: transparent;
+    right: 85px;
+    bottom: 155px;
+    border: 18px solid indigo;
+}
+.circle14 {
+    background: transparent;
+    right: 82px;
+    bottom: 152px;
+    border: 21px solid #9400D3;
+}
+
+
+.circle15 {
+    background: black;
+    right: 50px;
+    bottom: 350px;
+    border: 3px solid red;
+}
+.circle16 {
+    background: transparent;
+    right: 47px;
+    bottom: 347px;
+    border: 6px solid orange;
+}
+.circle17 {
+    background: transparent;
+    right: 44px;
+    bottom: 344px;
+    border: 9px solid yellow;
+}
+.circle18 {
+    background: transparent;
+    right: 41px;
+    bottom: 341px;
+    border: 12px solid green;
+}
+.circle19 {
+    background: transparent;
+    right: 38px;
+    bottom: 338px;
+    border: 15px solid blue;
+}
+.circle20 {
+    background: transparent;
+    right: 35px;
+    bottom: 335px;
+    border: 18px solid indigo;
+}
+.circle21 {
+    background: transparent;
+    right: 32px;
+    bottom: 332px;
+    border: 21px solid #9400D3;
+}
+@media only screen and (min-width: 885px) {
+    .large-circle, .medium-circle, .small-circle{
+        display: inline;
+    }
+}
