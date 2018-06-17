@@ -1,0 +1,80 @@
+.header{
+    background-color: #000000;
+}
+    .header-info{
+        margin: 0 auto;
+    }
+    .name{
+        padding: 0;
+        color: white;
+        display: inline-block;
+        font-family: 'Montserrat', sans-serif;
+    }
+    header img {
+        width: 100px;
+        display: inline-block;
+        
+    }
+    .right{
+        float:right;
+        padding-top: 40px;
+        padding-right: 3%;
+    }
+    .right li {
+        color: rgba(255, 255, 255, 0.76);
+        list-style-type: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+    }
+
+.section{
+    background-color: white;
+    text-align: center;
+    padding-top: 5%;
+}
+    .section-info{
+        margin: 0 auto;
+    }
+    .section-info a{
+        color: black;
+    }
+
+    .title{
+        color: black;
+        font-size: 30px;
+        
+    }
+
+    .title h1 {
+        font-size: 20px;
+        padding: 2px;
+        background:
+    }
+
+    .title-info{
+        color: black;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    a:hover {
+        background: red;
+        background: -webkit-linear-gradient( red,orange, green, blue, indigo, violet);
+        background: -o-linear-gradient( red, orange, green, blue,indigo, violet);
+        background: -moz-linear-gradient( red, orange, green, blue,indigo, violet);
+        background: linear-gradient(red, orange, green, blue, indigo, violet);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+@media only screen and (min-width: 600px) {
+    .section{
+        background-color: white;
+        text-align: left;
+        padding-top: 5%;
+    }
+    .left{
+        float: left;
+        margin-right: 80px;
+    }
+}
