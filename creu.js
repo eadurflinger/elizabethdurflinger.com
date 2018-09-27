@@ -1,6 +1,6 @@
 function AddReadMore() {
     //This limit you can set after how much characters you want to show Read More.
-    var carLmt = 500;
+    var carLmt = 1000;
     // Text to show when text is collapsed
     var readMoreTxt = " ... Read More";
     // Text to show when text is expanded

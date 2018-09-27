@@ -32,7 +32,7 @@
         <div class="header-info content clearfix">
 <!--            <img src="2017-10-11 21.26.10.jpg" alt="Elizabeth Durflinger">-->
             <div class="name rainbow">
-                <h1>Reccomender System<br/>CREU Research</h1>
+                <h1>Reccomender System<br/>CREU Research - by Elizabeth Durflinger</h1>
             </div>
 <!--
             <div class="right">
@@ -64,13 +64,19 @@
     <div></div>
     <section class="section clearfix">
         <div class="section-info content">
-
+            
             <div class="blog-post-container">
                 <div class="blog-post-overlay">
                     <div class="blog-post">
-                        <p>September 7th, 2018</p>
-                        <p class="addReadMore showlesscontent">
-                        On September 5th, our CREU Research team met to discuss our goals and milestones. Dr. Lucy Kerns invited us all to a Slack workspace for our team, and we joined the main CREU Slack as well. All of our members had set up the basis for their blogs and read over the suggested readings. We discussed association rules, support, confidence, and lift. In order to grasp a more solid understanding of these concepts, our assignment was to calcuate a list of asscociation rules and their corresponding support and confidence values based on a binary ratings matrix. We are to discuss our findings with the group at the next meeting on September 12th. I will include mine in the next post.
+                        <p><strong>September 24th, 2018</strong></p>
+                        <p class="">
+                        At this weeks meeting (September 19th), our team met with Dr. Kerns to review our progress. We discussed that we will not be using lift to calculate the association rules and that the next step of the project will be to right programs in Python to create association rules for the small data set that we have been given as specified in my last post. I researched the Apriori algorthim how to implement it. From there I created a program that reads from a csv file and creates a set of association rules based on the given information. I need to work on displaying this information in a more user friendly way.
+                        <br>
+                        This is how it is currently displayed: 
+                        <br>
+                        <img width="100%" src="Images/Screen%20Shot%202018-09-27%20at%2012.12.35%20PM.png">
+                        <br>
+                        The goal is to have this displayed by association rule in a readable format.
                         </p>
                         <div class="media-wrapper">
                         </div>
@@ -81,9 +87,155 @@
             <div class="blog-post-container">
                 <div class="blog-post-overlay">
                     <div class="blog-post">
-                        <p>August 29th, 2018</p>
-                        <p class="addReadMore showlesscontent">
-                        Our CREU Team met for our first meeting on August 29th, 2018. This includes Dr. Feng Yu, Dr. Lucy Kerns, the faculty advisors, as well as Olivia, Allyssa, Maddie, and myself. In this meeting we discussed our strategies for approaching the requirements of the project and came to the following timeline. In September our team will focus on familiarizing ourselves with the reccomender system, association rules, and matricies. Our faculty advisors will be providing us with reading materials to guide us in our learning. In October through December we will be collecting data, which will be Dr. Yu's field of expertise and keeping a blog of our progress. Next semester will be the bulk of the programming section of this research where we will be making a frontend interface for a deals site and making a reccomender system.<br>It has been decided that our team will have weekly meetings, every Wednesday from 4:00PM - 5:00PM in Lincoln Building on YSU's campus. In preparation for our next meeting our team should have created a blog and read over the reading selections provided to us by our faculty advisors.
+                        <p><strong>September 15th, 2018</strong></p>
+                        <p class="">
+                        This post pertains to rating matricies and calculating their lift. Lift is defined as how likely one deal will be liked while another is liked. A lift of 1 implies no association between the two deals and a lift greater than one implies that deal one is likely to be bought with deal two. Lift{A=>E} = (Support{A,E})/(Support{A}*Support{E}).<br><br>So Lift{A=>E} = (2/4)/(2/4 * 3/4) = (2/4)/(6/4) = 1/3<br><br>This means that that E is not likely to be liked when A is liked.
+                        </p>
+                        <div class="media-wrapper">
+                            <table id="customers">
+                                <caption>Example Ratings Matrix</caption>
+                                <tr>
+                                    <td>TI</td>
+                                    <td>A</td>
+                                    <td>B</td>
+                                    <td>C</td>
+                                    <td>D</td>
+                                    <td>E</td>
+                                </tr>
+                                <tr>
+                                    <td>Alice</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>User 1</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>User 2</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>User 3</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>User 4</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+           <div class="blog-post-container">
+                <div class="blog-post-overlay">
+                    <div class="blog-post">
+                        <p><strong>September 12th, 2018</strong></p>
+                        <p class="">
+                        This evening, our CREU Research team met to discuss our goals and milestones. During this meeting we reviewed the association rules, support, and confidence. Dr. Yu assisted us with understanding the concepts of support and confidence and how to calculate the values of each base upon the ratings matrix. Moving on in familiarizing ourselves with reccommender systems, our assignment for this upcoming week is to calculate the lift based on the ratings matrix provided and to research the Apriori Algorithm. 
+                        </p>
+                        <div class="media-wrapper">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-post-container">
+                <div class="blog-post-overlay">
+                    <div class="blog-post">
+                        <p><strong>September 7th, 2018</strong></p>
+                        <p class="">
+                        On September 5th, our CREU Research team met to discuss our goals and milestones. Dr. Lucy Kerns invited us all to a Slack workspace for our team, and we joined the main CREU Slack as well. All of our members had set up the basis for their blogs and read over the suggested readings. We discussed association rules, support, confidence, and lift. In order to grasp a more solid understanding of these concepts, our assignment was to calcuate a list of asscociation rules and their corresponding support and confidence values based on a binary ratings matrix. We are to discuss our findings with the group at the next meeting on September 12th.
+                        </p>
+                        <p class="">
+                        This next section pertains to rating matricies and calculating their association rules as well as the corresponding confidence and support values. For example, the support of the statement column A => E would be 2/4 and the condidence would be 2/2. For the statement B => D the support would be 1/4 and the confidence would be 1/2.
+                        </p>
+                        <div class="media-wrapper">
+                            <table id="customers">
+                                <caption>Example Ratings Matrix</caption>
+                                <tr>
+                                    <td>TI</td>
+                                    <td>A</td>
+                                    <td>B</td>
+                                    <td>C</td>
+                                    <td>D</td>
+                                    <td>E</td>
+                                </tr>
+                                <tr>
+                                    <td>Alice</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>User 1</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>User 2</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>User 3</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>User 4</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="media-wrapper">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-post-container">
+                <div class="blog-post-overlay">
+                    <div class="blog-post">
+                        <p><strong>August 29th, 2018</strong></p>
+                        <p class="">
+                        Our CREU Team met for our first meeting on August 29th, 2018. This includes Dr. Feng Yu, Dr. Lucy Kerns, the faculty advisors, as well as Olivia, Allyssa, Maddie, and myself. In this meeting we discussed our strategies for approaching the requirements of the project and came to the following timeline. In September our team will focus on familiarizing ourselves with the reccomender system, association rules, and matricies. Our faculty advisors will be providing us with reading materials to guide us in our learning. In October through December we will be collecting data, which will be Dr. Yu's field of expertise and keeping a blog of our progress. Next semester will be the bulk of the programming section of this research where we will be making a frontend interface for a deals site and making a reccomender system.<br><br>It has been decided that our team will have weekly meetings, every Wednesday from 4:00PM - 5:00PM in Lincoln Building on YSU's campus. In preparation for our next meeting our team should have created a blog and read over the reading selections provided to us by our faculty advisors.
                         </p>
                         <div class="media-wrapper">
                         </div>
